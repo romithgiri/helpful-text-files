@@ -1,0 +1,6 @@
+1. screen snipt = windows + shift + s
+2. history of copy = windows + v
+3. this pc = windows + e
+4. minimize all screen = windows + d
+5. minimize current window = windows + up arrow or down
+6. windows split screen = windows + left or right arrow

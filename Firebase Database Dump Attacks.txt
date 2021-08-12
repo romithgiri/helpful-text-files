@@ -1,0 +1,11 @@
+Firebase Database Vulnerability
+
+1. If rules are not secure (read & write = true i.e. anyone can read and write data)
+Read data api hit: https://firebase-databse-project-id.firebaseio.com/.json  (Replace project id with yours)
+
+2. If rules are secure but any authorized or register user can read data (read & write = auth != null)
+Read data api hit: https://(your_project_id).firebaseio.com/.json?auth=(your_login_token)&print=pretty
+Eg: https://firebase-databse-project-id.firebaseio.com/.json?auth=eyJhbGciOiJSUzI1NiIsImtpZCI6ImM0ZWFhZjkxM2VlNWY0MDY0YmE2NjUzN2M0Njk3YzY5OGE3NGYwODIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdGVjaG5vYmVhdC05MTM3NCIsImF1ZCI6InRlY2hub2JlYXQtOTEzNzQiLCJhdXRoX3RpbWUiOjE2MTQ1MTIzOTgsInVzZXJfaWQiOiJua1VTSGQyMzlqYmR3OEl0SXR4Y3RYc3pNcDQyIiwic3ViIjoibmtVU0hkMjM5amJkdzhJdEl0eGN0WHN6TXA0MiIsImlhdCI6MTYxNDUxMjQwMywiZXhwIjoxNjE0NTE2MDAzLCJlbWFpbCI6InJvaGl0Z2lyaTA4MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsicm9oaXRnaXJpMDgzMUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.nxHmqrISRWRbDz6MVMVBe7u4puTFAVZ7E7IFOAMAhDdNjbHnhaWPAUMPhkKbWgGa4pbDTGyfNVttGEKeoyOnMu6R7U1Ki7koOsReSTo9AiTrZBc3APWx9C548aDS6bdJ5KEB7kgZnxjxb7iIyNqZPJ5Bkr2jgNnyOlKKw14ThFnm6p6i-SPGQtO1QZdESUKF_YD4oovw0yEBPF86HqnSoOvw5d5W_2D97SOOqeYt9t3T36v7smbY-HPsTyp7ZchNJCd4-d11RqEEGU84cuSdzRBrHwtvWMTzgmQzFbvuMt67wrZGIFOBbJCTzozKtXl8Ai96K8lZVrrv2vS54nOE2g&print=pretty
+
+
+

@@ -1,0 +1,44 @@
+1. check branch
+cmd: git branch
+
+2. check status
+cmd: git status
+
+3. create new branch and checkout in it
+cmd: git checkout -b new_branch_name
+
+4. checkout to branch
+cmd: git checkout branch_name
+
+5. discard the changes
+cmd: git reset --hard
+
+6. take pull from origin 
+cmd: git pull origin branch_name
+
+7. push in repo
+cmd: git push origin branch_name
+
+8. clone repo
+cmd: git clone repo_url
+
+9. git add
+cmd: git add .
+
+10. commit add
+cmd: git commit -m "your message"
+
+11. see all the commits message locally
+cmd: git log
+
+12. for init git in pre created project
+cmd: 
+	a. cd <proyect folder>
+	b. git init
+	c. git remote add origin <link to repo>
+	d. git fetch origin
+	e. git checkout master
+	f. git add --all
+	g. git commit -m "<message>"
+	h. git push
+

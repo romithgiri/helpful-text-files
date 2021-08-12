@@ -1,0 +1,11 @@
+Add aar file in android projects
+
+https://www.youtube.com/watch?v=L6f0kVQYixU
+
+
+####################### 1st
+flatDir{dirs 'libs'}
+
+
+####################### 2nd
+implementation(name: 'aar-name', ext: 'aar')

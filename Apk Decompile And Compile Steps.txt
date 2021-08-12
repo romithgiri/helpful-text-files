@@ -1,0 +1,37 @@
+1. run in apktool
+cmd: apktool d apk-file
+E:\Rohit\android apk tool>apktool d xyz.apk
+
+2. open smali files and edit that save it after edit
+
+3. compile that file:
+cmd: apktool b apk-file-extracted-folder-path
+E:\Rohit\android apk tool>apktool b xyz
+
+4. change the dir
+E:\Rohit\android apk tool>cd xyz
+E:\Rohit\android apk tool\xyz>cd dist
+
+5. generate keystore to sign the compiled apk file 
+cmd: "C:\Program Files\Java\jdk1.8.0_231\bin\keytool.exe" -genkey -keystore rohit.keystore -validity 1000 -alias rohit
+E:\Rohit\android apk tool\technobeat\dist>"C:\Program Files\Java\jdk1.8.0_231\bin\keytool.exe" -genkey -keystore rohit.keystore -validity 1000 -alias rohit
+
+6. Finally create signed apk
+cmd: "C:\Program Files\Java\jdk1.8.0_231\bin\keytool.exe" -keystore rohit.keystore -verbose xyz.apk rohit
+E:\Rohit\android apk tool\xyz\dist>"C:\Program Files\Java\jdk1.8.0_231\bin\keytool.exe" -keystore rohit.keystore -verbose xyz.apk rohit
+
+
+jarsigner -keystore rohit.keystore -storepass 123456 -keypass 123456 <unsigned_apk_file> <alias_name>
+
+_________________________________________________________________________________________________
+===>>> For .jar to .dex conversion
+run the command d2j-dex2jar.bat classes.dex
+_________________________________________________________________________________________________
+
+1.https://sourceforge.net/p/dex2jar/wiki/ModifyApkWithDexTool/
+________________________________________________________________________________________________
+if above steps will not run then use this -->>> below one
+
+1. "C:\Program Files\Java\jdk1.8.0_231\bin\keytool.exe" -keystore rohit.keystore -verbose abc.apk rohit
+2. keytool -importkeystore -srckeystore rohit.keystore -destkeystore rohit.keystore -deststoretype pkcs12
+3. jarsigner -keystore rohit.keystore -storepass 123456 -keypass 123456 abc.apk rohit

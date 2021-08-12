@@ -1,0 +1,3 @@
+1. ionic start project-name blank
+2. cd project-name
+3. ionic cordova platform add android

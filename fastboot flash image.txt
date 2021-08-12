@@ -1,0 +1,21 @@
+1. check device
+cmd: adb devices
+
+2. reboot in fastboot
+cmd: adb reboot bootloader
+
+3. unlock oem
+cmd: fastboot oem unlock
+
+4. flash recovery image
+cmd: fastboot flash recovery recovery.img
+
+5. restart device
+cmd: fastboot reboot
+
+6. check bootloader status
+cmd: fastboot oem device-info
+
+7. flash boot image
+cmd: fastboot flash boot magisk-patched.img
+
