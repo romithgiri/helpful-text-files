@@ -1,0 +1,6 @@
+1. setup service account
+https://stackoverflow.com/questions/35127086/android-inapp-purchase-receipt-validation-google-play
+
+2. Get purchase subscription url using purchase token
+https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.subscriptions/get
+

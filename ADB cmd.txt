@@ -1,0 +1,3 @@
+1. get the current visible screen name
+cmd: adb shell dumpsys window windows | findstr "mCurrentFocus"
+
